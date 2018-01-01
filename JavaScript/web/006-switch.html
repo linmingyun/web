@@ -1,0 +1,29 @@
+<html>
+<head><title>使用swith 条件语句的Javascript 示例</title></head>
+<body>
+<script type="text/javascript">
+	var d = new Date();
+	theDay=d.getDay();
+	switch (theDay)
+	{
+	case 5:
+		document.write("<b>总算熬到星期五了。</b>");
+		break;
+	case 6:
+		document.write("<b>哈哈，周末啦！</b>");
+		break;
+	case 0:
+		document.write("<b>明天又要上班，想想就烦。</b>");
+		break;
+	default:
+		document.write("<b>每个工作日慢得都象蜗牛爬啊！</b>");
+	}
+</script>
+<p>
+该Javascript 示例解释：首先将今天的日期值赋值给变量d，然后用.getDay 得出天数，赋值给
+变量theDay，然后使用switch 条件语句。如果theDay 等于5，表示是星期五；如果是6，表示是
+星期六；如果是0，表示是星期天；如果是其它数，表示是星期一到星期四。根据值的不同，显示
+不同的内容。
+</p>
+</body>
+</html>

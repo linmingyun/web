@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script language="javascript">
+	try
+
+	{
+
+		var n = error; // 人为引发一个错误
+
+	}
+
+	catch (e)
+
+	{
+
+		alert((e.number & 0xFFFF) + "号错误：" + e.description);// 错误处理：仅输出错误信息
+
+	}
+</script>
+
+<script language="javascript">
+	try
+
+	{
+
+		var fruit = new Array("鸭梨", "苹果", "葡萄", "李子"); // 水果
+
+		for (n = 0; n < fruit.length; m++) // 遍历数组，在此人为引发一个异常
+
+		{
+
+			document.write(fruit[n] + " ");
+
+		}
+
+	}
+
+	catch (e)
+
+	{
+
+		alert((e.number & 0xFFFF) + "号错误：" + e.description); // 处理异常
+
+	}
+
+	finally // finally块中清除数组所占的资源
+
+	{
+
+		fruit = null;
+
+		alert("fruit=" + fruit + "已经断开fruit数组的引用！");
+
+	}
+</script>
+
+<script language="javascript">
+
+try
+
+{
+
+    var total = 100;
+
+    var parts = 0;
+
+    if( parts == 0 )                    // 如果除数为0则抛出异常
+
+    {
+
+        throw "Error:parts is zero";
+
+    }
+
+    alert( "每人"+total/parts+"份");    //此处将捕获try块中抛出的异常
+
+}
+
+catch( e )
+
+{
+
+    alert( e );
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>一个用break 中断循环的Javascript 代码示例</title>
+<script type="text/javascript">
+	function BreakTest(breakpoint){
+		var i = 0;
+		var m = 0;
+		while (i < 100)
+		{
+			//当i 等于breakpoint 时，中断循环
+			if (i == breakpoint)
+			break;
+			m=m + i;
+			i++;
+		}
+		return(m);
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	//设函数BreakTest 参数breakpoint 值为23，得到从1 加到22 的合计。
+	document.write(BreakTest(23));
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>练习5-1</title>
+
+<script language="javascript" type="text/javascript">
+
+// <!CDATA[
+
+var isDataOK = false;               // 定义开关变量，作为是否发送表单到服务器的依据
+
+function Submit1_onclick()
+
+{
+
+    return isDataOK;                // 直接返回开关值         
+
+}
+
+function onChange( obj )
+
+{
+
+    try                             // 将可能出错的代码放入try块中
+
+    {
+
+       if( obj == "UserName" )      // 如果发生焦点改变的对象是“用户名”框
+
+       {
+
+            var userObj = document.getElementById(obj);     // 获取用户名文本框对象
+
+            var user = new String(userObj.value);           // 取得用户名值
+
+            if( (user.length > 20)||(userObj.value == "") ) // 如果用户名为空或大于20字符则不符合规则
+
+            {
+
+                alert( "用户名不符合规则：超过20个字符或为空！" );
+
+                userObj.value = "";                         // 清除内容并关掉开关
+
+                isDataOK = false;
+
+            }
+
+       }
+
+       else if( obj == "Password1" )//如果焦点改变的对象是密码框
+
+       {
+
+             var pwdObj = document.getElementById(obj);     // 获取密码框对象
+
+             var pwd = new String(pwdObj.value);
+
+             if( (pwd.length > 20) || (pwd=="") )           // 判断长度
+
+             {
+
+                alert( "密码不符合规则：超过20字符或为空！" );
+
+                pwdObj.value = "";
+
+                isDataOK = false;                           // 不符合规则就关掉开关并返回
+
+                return;
+
+             }
+
+             for( i = 0; i<pwd.length; i++ )                // 长度合格时逐一判断字符是否是0~9之间
+
+             {
+
+                for( j = 0; j<10; j++ )
+
+                {
+
+                    if( pwd.charAt(i) != j )
+
+                    {
+
+                        if( j==9 )
+
+                        {
+
+                            alert( "密码不符合规则：包含非数字字符！" );
+
+                            pwdObj.value = "";
+
+                            isDataOK = false;
+
+                            return;
+
+                         }
+
+                         else
+
+                         {
+
+                            continue;                       // 当前字符处于0~9之间，则继续判断下一个
+
+                         }
+
+                    }
+
+                    else
+
+                    {
+
+                        break;                              // 只要有一个字符不符合规则就断开循环
+
+                    }
+
+                }
+
+             }
+
+             isDataOK = true;                               // 所有条件符合了则打开发送表单的开关
+
+       }
+
+    }
+
+    catch( e )
+
+    {
+
+       alert("对不起，有错误发生："+e.description);         // 如果有错误发生则输出错误信息
+
+    }
+
+}
+
+// ]]>
+
+</script>
+
+</head>
+
+<body style="position: relative; background-color: white">
+
+<!--配置用户截面，并绑定事件处理程序-->
+
+<div
+	style="border-right: silver 1px solid; border-top: silver 1px solid; border-left: silver 1px solid; width: 330px; border-bottom: silver 1px solid; height: 137px; background-color: ghostwhite; font-size: 12px; font-style: normal;">
+
+<form id="frmLogin" action="#" method="post"
+	style="position: absolute; left: 17px; top: 22px; width: 320px; height: 104px;">
+
+<span style="left: 42px; position: absolute; top: 23px; width: 177px;">
+
+账号：<input id="UserName" style="height: 13px; width: 134px;" type="text"
+	onchange="onChange(this.id)" /> </span> <br />
+
+<span style="left: 42px; position: absolute; top: 50px"> 密码：<input
+	id="Password1" style="height: 13px; width: 134px;" type="password"
+	onchange="onChange(this.id)" /> </span> <br />
+
+<span style="position: absolute; left: 225px; top: 25px; width: 38px;">
+
+<input id="Reset1" type="reset" value="重设" /> <input id="Submit1"
+	type="submit" value="登陆" onclick="return Submit1_onclick()" /> </span></form>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>一个使用到for...in 循环的Javascript 示例</title>
+</head>
+<body>
+<script type="text/javascript">
+	//创建一个对象myObject 以及三个属性sitename, siteurl, sitecontent。
+	var myObject = new Object();
+	myObject.sitename = "站长站站长书库";
+	myObject.siteurl = "book.chinaz.com";
+	myObject.sitecontent = "网页教程代码图库的中文站点";
+	//遍历对象的所有属性
+	for (prop in myObject)
+	{
+		document.write("属性'" + prop + "' 为" + myObject[prop]);
+		document.write("<br>");
+	}
+</script>
+
+<script language="javascript">
+<!--
+
+	var poets = new Array( "王维",  "杜甫", "李白", "白居易" );	// 创建数组
+
+	document.write("古代几个大诗人：<br>");				// 输出标题
+
+	for( n in poets )						// 逐个输出数组元素
+
+	{
+		document.write( "<li>" + poets[n] );			// 输出诗人的名字
+	}
+
+-->
+</script>
+
+<script language="javascript">
+<!--
+
+	// 定义变量引用一个数组对象
+
+	var oMyArray = new Array( 13, 55, 37, 33, 45, 9, 60, 21, 10 );
+
+	// 输出排序前的数组
+
+	document.write( "<br>排序前：" + oMyArray );
+
+	// 开始排序
+
+	for ( index in oMyArray )
+
+	{
+
+	    for ( i in oMyArray )
+
+	    {
+
+	        if( oMyArray[index]<oMyArray[i] )
+
+	        {
+
+	            nTemp = oMyArray[index];
+
+	            oMyArray[index] = oMyArray[i];
+
+	            oMyArray[i] = nTemp;
+
+	        }
+
+	    } 
+
+	}
+
+	// 输出排序后的数组
+
+	document.write( "<br>排序后：" + oMyArray );
+
+-->
+</script>
+
+<script language="javascript">
+
+<!--
+
+   var nameList = new Array( "Tom", "Lisley", "Petter", "ZongNanYang", "Lily", "Jackson" ); // 名单
+
+   for( index in nameList )                                                                 // 遍历名单
+
+   {
+
+        document.write( nameList[index] + "<br>" ); //使用“[]”运算符读取数组元素的内容                                         
+
+   }
+
+--> 
+
+</script>
+</body>
+</html>

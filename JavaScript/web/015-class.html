@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script language="javascript">
+
+<!--
+
+	function Card( owner, rate )			// 定义一车子对象
+
+	{
+
+		this.Owner = owner;			// 车主
+
+		this.MaxRate = rate;			// 极速
+
+	}
+
+	var myCard = new Card( "Sunsir", "400KMpH" );	// 创建一个车子实例
+
+	document.write( myCard.Owner + "的车子极速为" + myCard.MaxRate );	// 输出车子的属性
+
+-->
+
+</script>
+
+<script language="javascript">
+
+<!--
+
+    function showStudentInfo()
+
+    {
+
+        // 输出this指针指向的对象的name、age成员
+
+        document.write( "<li>" + this.name + " " + this.age + "<br>" );
+
+    }
+
+    function Student( _name, _age )         // 定义Student类的构造函数
+
+    {
+
+        this.name = _name;
+
+        this.age = _age;
+
+    }
+
+    var stu1 = new Student( "Tom", 20 );    // 创建两个学生类实例
+
+    var stu2 = new Student( "Lily", 21 );
+
+    showStudentInfo.call( stu1 );           // 分别以stu1、stu2作为上下文调用showStudentInfo函数
+
+    showStudentInfo.call( stu2 );
+
+--> 
+
+</script>
+</body>
+</html>

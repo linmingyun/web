@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>一个使用到if 条件语句的Javascript 示例</title>
+</head>
+<body>
+<script type="text/javascript">
+	var vText = "What's up?";
+	var vLen = vText.length;
+	if (vLen < 100)
+	{
+		document.write("<p> 该字符串长度小于100</p>");
+	}
+</script>
+<p>Javascript 示例代码解释：这个Javascript 示例用到了Javascript 的if 条件语句。
+首先用.length 计算出字符串What's up?的长度，然后使用if 语句。if 语句的内容是：如果该字符串长度小于100，就显示"该字符串长度小于100"。
+</p>
+<script language="javascript">
+<!--
+
+	var a = NaN;
+
+	var b = "123";
+
+	var c = 123;
+
+	var d = "1.23";
+
+	document.write( "<b>Global对象的isNaN方法</b><br>" );
+
+	var ta =  isNaN( a );	// 使用Global对象的isNaN()方法测试a的值 
+
+	document.write( "<li>a的值是否是NaN：" + ta + "<br>" );
+
+	var tb = isNaN( b );	// 测试b的值
+
+	document.write( "<li>b的值是否是NaN：" + tb + "<br>" );
+
+	var tc = isNaN( c );	// 测试c的值
+
+	document.write( "<li>c的值是否是NaN：" + tc + "<br>" );
+
+	document.write( "<b>Global对象的parseInt方法</b><br>" );
+
+	var ib = parseInt( b );	// 使用Global对象的parseInt方法,将字符串“123”解析为数值123
+
+	if( ib == c )
+	{
+		document.write( "<li>b解析为数值：" + ib + "<br>" );
+	}
+
+	document.write( "<b>Global对象的parseFloat方法</b><br>" );		
+
+	var id = parseFloat( d );// 使用Global对象的parseFloat方法将字符串“1.23”解析为数值1.23
+
+	if( id == 1.23 )
+	{
+		document.write( "<li>b解析为数值：" + id + "<br>" );
+	}
+-->
+</script>
+</body>
+</html>

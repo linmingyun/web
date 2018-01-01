@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script language="javascript">
+<!--
+
+	// 诗的内容
+
+	var comment = "静夜思李白床前明月光，疑是地上霜。举头望明月，低头思故乡。";
+
+	var partial = comment.substring( 0, 3 );	// 取出标题
+
+	partial = partial.bold();			// 标题加粗
+
+	document.write( "<p align=\"center\">" );	// 输出HTML标签“<p>”，并设置居中对齐
+
+	document.write( partial );			// 输出标题
+
+	partial = comment.slice( 3, 5 );		// 取出作者
+
+	document.write( "<br>" );			// 输出换行标签<br>
+
+	document.write( partial );			// 输出作者
+
+	partial = comment.slice( 5, 17 );		// 取出第一句诗文
+
+	partial = partial.fontcolor("gray");		// 设置颜色为gray（灰色）
+
+	document.write( "<br>" );			// 输出换行标签
+
+	document.write( partial );			// 输出诗句
+
+	partial = comment.slice( 17, 29 );		// 取出第二句诗文
+
+	partial = partial.fontcolor("gray");		// 设置颜色为gray（灰色）
+
+	document.write( "<br>" );			// 输出换行标签
+
+	document.write( partial );			// 输出诗句
+
+	document.write( "</p>" );			// 输出HTML标签“<p>”的结束标签
+
+-->
+</script>
+</body>
+</html>

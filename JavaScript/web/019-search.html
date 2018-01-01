@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+    <title>范例5-14</title>
+
+</head>
+
+<body>
+
+<script language="javascript">
+
+    function btnSearch_MouseMove()
+
+    {
+
+        try // 将因为加并更换载图片可能出错，因此将代码将在try块中
+
+        {
+
+           var btnSearch = document.getElementById( "BtnSearch" );  // 获取图片框和文本框
+
+           var SchTxt = document.getElementById( "SearchTXT" );
+
+           var oriPicSrc = btnSearch.src;   // 保存原来的图片
+
+           btnSearch.src = "icon2.png";
+
+           SchTxt.select();                 // 当鼠标移上按钮则自动选择文框中的文字
+
+        }
+
+        catch( e )
+
+        {
+
+             btnSearch.src=oriPicSrc;       // 如果更新失败则换上原来的图片
+
+        }
+
+    }
+
+    function btnSearch_MouseOut()
+
+    {
+
+        try
+
+        {
+
+           var btnSearch = document.getElementById( "BtnSearch" );
+
+           var SchTxt = document.getElementById( "SearchTXT" );
+
+           var oriPicSrc = btnSearch.src;
+
+           btnSearch.src = "icon1.png";
+
+        }
+
+        catch( e )
+
+        {
+
+            btnSearch.src=oriPicSrc;    // 如果更新失败则换上原来的图片
+
+        }
+
+    }
+
+</script>
+
+    <div style="border-right: #cccccc 1px solid; border-top: #cccccc 1px solid; left: 153px;
+
+        border-left: #cccccc 1px solid; width: 235px; border-bottom: #cccccc 1px solid;
+
+        position: absolute; top: 66px; height: 74px; background-color: #ccffff">
+
+    <input id="SearchTXT" type="text" style="height:14px; left: 25px; position: absolute; top: 29px;" value="搜索关键词"/>
+
+    <img src="icon1.png" id="BtnSearch" style="width: 24px; height: 24px; left: 187px; position: absolute; top: 27px;"
+
+        onmouseout="return btnSearch_MouseOut()"  onmouseover="return btnSearch_MouseMove()"/>
+
+    </div>
+
+</body>
+
+</html>

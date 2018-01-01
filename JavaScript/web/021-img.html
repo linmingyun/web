@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+    <title>练习5-2</title>
+
+</head>
+
+<body>
+
+    <!--设置3个图片-->
+
+    <img src="icon1.png" style="visibility:visible;"/>
+
+    <img src="icon2.png" style="visibility:visible;"/>
+
+    <img src="icon3.png" style="visibility:visible;"/><br />
+
+    <!--设置两个按钮，一个发送“显示”命令，一个发送“屏蔽”命令-->
+
+    <input id="Button1" type="button" value="屏蔽" onclick="return Button1_onclick('hidden')" />
+
+    <input id="Button2" type="button" value="显示" onclick="return Button1_onclick('visible')" />
+
+<script language="javascript">
+
+function Button1_onclick( arg )// 按钮的单击事件处理程序
+
+{
+
+    try
+
+    {
+
+        var imgs = document.images; // 取得网页中的所有图片
+
+        for( n in imgs )            // 遍历图片数组
+
+        {
+
+            if( imgs[n] == imgs.length )    // 忽略第一个元素，因为其不是图片对象
+
+            {
+
+                continue;
+
+            }
+
+            imgs[n].style.visibility= arg;  // 使用传入的参数设置图片可视状态，有visible和hidden
+
+        }
+
+    }
+
+    catch( e )                              
+
+    {
+
+         alert(e.description);              // 出错时输出出错信息
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>

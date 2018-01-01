@@ -1,0 +1,65 @@
+<html>
+<head><title>使用if...else 条件语句的Javascript 示例</title></head>
+<body>
+<script type="text/javascript">
+	var vDay = new Date()
+	var vHour = vDay.getHours()
+	if (vHour < 17)
+	{
+		document.write("<b>日安</b>")
+	}
+	else
+	{
+		document.write("<b>晚安</b>")
+	}
+</script>
+<p>Javascript 代码示例解释：首先将今天的日期赋值给变量vDay，然后用.getHours 得出vDay 的
+小时数，赋值给变量vHour，然后使用if...else 条件语句判断，如果vHour 小于17，显示"日安"，
+反之则显示"晚安"。</p>
+
+<script language="javascript">
+
+	var cur = new Date();		// 创建当前日期对象cur
+
+	var years = cur.getYear();	// 从日期对象cur中取得年数
+
+	var months = cur.getMonth();	// 取得月数
+
+	var days = cur.getDate();	// 取得天数
+
+	var hours = cur.getHours();	// 取得小时数
+
+	var minutes = cur.getMinutes();	// 取得分钟数
+
+	var seconds = cur.getSeconds();	// 取得秒数
+
+	// 显示取得的各个时间值
+
+	alert( "此时时间是：" + years + "年" + (months+1) + "月"
+
+		+ days + "日" + hours + "时" + minutes + "分"
+
+		+ seconds + "秒" );
+
+</script>
+<script language="javascript">
+<!--	
+
+	var dateObj = new Date();	// 创建一个日期对象	
+
+	dateObj.setYear( 2007 );	// 设置日期对象的年份	
+
+	dateObj.setDate( 20 );		// 设置日期对象的日期
+
+	dateObj.setMonth( 4 );		// 设置日期对象的月份
+
+	// 显示日期对象中的时间
+
+	alert( "dateObj中设定的时间为：" + dateObj.getYear() + "年"
+
+		+ dateObj.getMonth() + "月" + dateObj.getDate() + "日" );
+
+-->
+</script>
+</body>
+</html>
