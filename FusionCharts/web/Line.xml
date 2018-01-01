@@ -1,0 +1,30 @@
+<chart caption='' subcaption='' bgAlpha='10,10' divLineAlpha='20' alternateHGridAlpha='5' shadowAlpha='40'
+	xAxisName='' yAxisName='' yAxisMinValue='' numberPrefix='' bgAngle='270' numvdivlines='10'
+	showValues='0' alternateHGridColor='3399CC' alternateHGridAlpha='20' lineThickness='2' chartRightMargin='25'
+	divLineColor='3399CC' divLineAlpha='50' canvasBorderColor='666666' showYAxisValues='1' anchorRadius='2'
+	baseFontColor='666666' lineColor='1D8BD1' color='1D8BD1' bgColor='FFFFFF,3399CC'>
+	<set label='Jan' value='17400' />
+	<set label='Feb' value='19800' />
+	<set label='Mar' value='21800' />
+	<set label='Apr' value='23800' />
+	<set label='May' value='29600' />
+	<set label='Jun' value='27600' />
+	<set label='Jul' value='31800' />
+	<set label='Aug' value='39700' />
+	<set label='Sep' value='37800' />
+	<set label='Oct' value='21900' />
+	<set label='Nov' value='32900' />
+	<set label='Dec' value='39800' />
+	<styles>
+		<definition>
+			<style name='Anim1' type='animation' param='_xscale' start='0' duration='1' />
+			<style name='Anim2' type='animation' param='_alpha' start='0' duration='0.6' />
+			<style name='DataShadow' type='Shadow' alpha='40' />
+		</definition>
+		<application>
+			<apply toObject='DIVLINES' styles='Anim1' />
+			<apply toObject='HGRID' styles='Anim2' />
+			<apply toObject='DATALABELS' styles='DataShadow,Anim2' />
+		</application>
+	</styles>
+</chart>

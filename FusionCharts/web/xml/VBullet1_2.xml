@@ -1,0 +1,9 @@
+<chart palette='1' lowerLimit='0' upperLimit='30' chartBottomMargin='10' chartLeftMargin='10' caption='无锡市' subcaption='万立方米' showBorder='0'>
+    <colorRange>
+        <color minValue='0' maxValue='25' />
+        <color minValue='25' maxValue='35' /> 
+        <color minValue='35' maxValue='40' /> 
+    </colorRange> 
+    <value>41.78</value>
+    <target>40.00</target>
+</chart>

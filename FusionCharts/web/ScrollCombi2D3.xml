@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='GBK'?>
+<chart caption='当前时间段取水量历史对比（万m?）' lineThickness='2' showValues='0'
+	areaOverColumns='0' formatNumberScale='0' useRoundEdges='1' palette='2'
+	legendBorderAlpha='0' baseFontSize='15'>
+	<categories>
+		<category label='南京市' />
+		<category label='无锡市' />
+		<category label='徐州市' />
+		<category label='常州市' />
+		<category label='苏州市' />
+		<category label='南通市' />
+		<category label='连云港' />
+		<category label='淮安市' />
+		<category label='盐城市' />
+		<category label='扬州市' />
+		<category label='镇江市' />
+		<category label='泰州市' />
+		<category label='宿迁市' />
+	</categories>
+	<dataset seriesName='当前时间段' color='FDC12E'>
+		<set value='354671.2' />
+		<set value='244687.77' />
+		<set value='64949.227' />
+		<set value='0' />
+		<set value='49809.39' />
+		<set value='0' />
+		<set value='701.575' />
+		<set value='0' />
+		<set value='0' />
+		<set value='4488.15' />
+		<set value='912.805' />
+		<set value='4156.4175' />
+		<set value='169662.12' />
+	</dataset>
+	<dataset seriesName='历史同期时间段' color='56B9F9'>
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+		<set value='60000' />
+	</dataset>
+	<dataset seriesName='计划量' renderAs='Line' color='FF0000'
+		lineThickness='2'>
+		<set value='430900' />
+		<set value='418300' />
+		<set value='438100' />
+		<set value='285100' />
+		<set value='836900' />
+		<set value='447100' />
+		<set value='300100' />
+		<set value='348900' />
+		<set value='536600' />
+		<set value='444400' />
+		<set value='330000' />
+		<set value='416300' />
+		<set value='289200' />
+	</dataset>
+</chart>

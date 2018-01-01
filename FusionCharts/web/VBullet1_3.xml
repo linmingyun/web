@@ -1,0 +1,10 @@
+<chart caption='nanjing' lowerLimit='0' chartBottomMargin='4'
+	chartLeftMargin='0' subcaption='' showBorder='0' upperLimit='53'>
+    <colorRange>
+		<color code='00CC00' minValue='0' maxValue='25.85' />
+		<color code='FF8000' minValue='25.85' maxValue='34.47' />
+		<color code='FF0000' minValue='34.47' maxValue='43.13' />
+    </colorRange> 
+    <value>43.09</value>
+    <target>41.84</target>
+</chart>

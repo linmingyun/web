@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='GBK'?>
+<chart caption='Hits per hour' lineThickness='2' showValues='0'
+	areaOverColumns='0' formatNumberScale='0' useRoundEdges='1' palette='2'
+	legendBorderAlpha='0'>
+	<categories>
+		<category label='南京市' />
+		<category label='无锡市' />
+		<category label='徐州市' />
+		<category label='常州市' />
+		<category label='苏州市' />
+		<category label='南通市' />
+		<category label='连云港' />
+		<category label='淮安市' />
+		<category label='盐城市' />
+		<category label='扬州市' />
+		<category label='镇江市' />
+		<category label='泰州市' />
+		<category label='宿迁市' />
+	</categories>
+	<dataset seriesName='当前时间段' color='FDC12E'>
+		<set value='141868476' />
+		<set value='97875108' />
+		<set value='27626574' />
+		<set value='0' />
+		<set value='19892892' />
+		<set value='0' />
+		<set value='280630' />
+		<set value='0' />
+		<set value='0' />
+		<set value='3062367' />
+		<set value='365122' />
+		<set value='1662567' />
+		<set value='67864849' />
+	</dataset>
+	<dataset seriesName='历史同期时间段' color='56B9F9'>
+		<set value='11662567' />
+		<set value='11662567' />
+		<set value='11662567' />
+		<set value='16162567' />
+		<set value='16612567' />
+		<set value='16621567' />
+		<set value='16625167' />
+		<set value='16625617' />
+		<set value='16625617' />
+		<set value='16625671' />
+		<set value='11662567' />
+		<set value='11662567' />
+		<set value='16162567' />
+	</dataset>
+	<dataset seriesName='Average' renderAs='Line' color='0372AB'
+		lineThickness='2'>
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+		<set value='511' />
+	</dataset>
+</chart>

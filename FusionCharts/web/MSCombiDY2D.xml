@@ -1,0 +1,49 @@
+<chart palette='2' caption='dqyslfx' showValues='0'
+	divLineDecimalPrecision='1' limitsDecimalPrecision='1'
+	formatNumberScale='0' baseFontSize='17'>
+	<categories fontSize='12'>
+		<category label='nanjing' />
+		<category label='wuxi' />
+		<category label='xuzhou' />
+		<category label='changzhou' />
+		<category label='shuzhou' />
+		<category label='nantong' />
+		<category label='lianyungang' />
+		<category label='huaian' />
+		<category label='yancheng' />
+		<category label='yangzhou' />
+		<category label='zhenjiang' />
+		<category label='taizhou' />
+		<category label='suqian' />
+	</categories>
+	<dataset seriesName='real'>
+		<set value='141868476'/>
+		<set value='97875108'/>
+		<set value='25979690' />
+		<set value='0' />
+		<set value='19923757' />
+		<set value='0' />
+		<set value='280630' />
+		<set value='0' />
+		<set value='0' />
+		<set value='1795260' />
+		<set value='365122' />
+		<set value='1662567' />
+		<set value='67864849' />
+	</dataset>
+	<dataset lineThickness='3' seriesName='plan' parentYAxis='S'>
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+		<set value='30000000' />
+	</dataset>
+</chart>

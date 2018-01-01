@@ -1,0 +1,24 @@
+<chart caption="Annual Revenue" subcaption="In Million $"
+	xaxisname="Year" PYaxisname="Sales in M$" SYAxisName="Cost as % of Revenue"
+	decimals="0" numberPrefix="$" numberSuffix="M" sNumberSuffix="%25"
+	setAdaptiveSYMin="1" showPlotBorder="1" palette="3" useRoundEdges="1">
+	<categories font="Arial" fontSize="12" fontColor="000000">
+		<category label="2001" />
+		<category label="2002" />
+		<category label="2003" />
+		<category label="2004" />
+		<category label="2005" />
+	</categories>
+	<dataset>
+		<dataSet>
+		</dataSet>
+	</dataset>
+	<lineSet seriesname="Cost as % of Revenue" showValues="0"
+		lineThickness="4">
+		<set value="57" />
+		<set value="68" />
+		<set value="79" />
+		<set value="73" />
+		<set value="80" />
+	</lineSet>
+</chart>

@@ -1,0 +1,51 @@
+<chart palette="3" caption="Break-up of Annual Revenue" subcaption="" xaxisname="" Yaxisname="Sales in M$" numdivlines="3" numberPrefix="" numberSuffix="" showSum="1" useRoundEdges="1" legendBorderAlpha="0">
+<categories font="Arial" fontSize="12" fontColor="000000">
+  <category label="1" /> 
+  <category label="2" /> 
+  <category label="3" /> 
+  <category label="4" /> 
+  <category label="5" /> 
+  <category label="6" /> 
+  <category label="7" /> 
+  <category label="8" /> 
+  <category label="9" /> 
+  <category label="10" /> 
+  <category label="11" /> 
+  <category label="12" /> 
+  <category label="13" />  
+</categories>
+<dataset>
+	<dataSet seriesName="plan" color="AFD8F8" showValues="0">
+		<set value='17210' />
+		<set value='8080' />
+		<set value='8940' />
+		<set value='14900' />
+		<set value='14900' />
+		<set value='5870' />
+		<set value='17210' />
+		<set value='4160' />
+		<set value='4340' />
+		<set value='5180' />
+		<set value='3910' />
+		<set value='4040' />
+		<set value='1930' />		
+	</dataSet>
+</dataset>
+<dataSet>
+	<dataset seriesname="real" color="8BBA00" showValues="0">
+		<set value='11408.4' />
+		<set value='4785.9' />
+		<set value='5097.3' />
+		<set value='9591.9' />
+		<set value='9591.9' />
+		<set value='3584.5' />
+		<set value='11408.4' />
+		<set value='2489.2' />
+		<set value='2371.5' />
+		<set value='2334.5' />
+		<set value='1521.6' />
+		<set value='1827.3' />
+		<set value='1006.7' />
+	</dataset>
+</dataSet>
+</chart>

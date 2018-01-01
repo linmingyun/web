@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='GBK'?>
+<chart caption='???????' baseFontSize='12' palette='2' shownames='1'
+	showvalues='0' numberPrefix='' showSum='1' decimals='2' useRoundEdges='1'>
+	<categories font='Arial' fontSize='12' fontColor='000000'>
+		<category label='??' />
+		<category label='??' />
+	</categories>
+	<dataSet>
+		<dataSet seriesname='???' color='5aae30' showValues='0'>
+			<set value='13' toolText='??,13' />
+			<set value='6' toolText='??,6' />
+		</dataSet>
+		<dataSet seriesname='????' color='987df2' showValues='0'>
+			<set value='1' toolText='???,1' />
+			<set value='1' toolText='???,1' />
+		</dataSet>
+	</dataSet>
+</chart>

@@ -1,0 +1,9 @@
+<chart lowerLimit='0' upperLimit='5' chartLeftMargin='10' chartBottomMargin='10' caption='' subcaption='' showBorder='0'>
+    <colorRange>
+		<color code='00CC00' minValue='0' maxValue='25' />
+		<color code='FF8000' minValue='25' maxValue='34' />
+		<color code='FF0000' minValue='34' maxValue='43' />
+    </colorRange> 
+    <value>83.69</value>
+    <target>80</target>
+</chart>

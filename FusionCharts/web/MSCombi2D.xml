@@ -1,0 +1,28 @@
+<chart caption="shuizhipingjia" lineThickness="2" showValues="0" rotateNames="1" slantLabels="1" areaOverColumns="0" formatNumberScale="0" showPlotBorder='1' palette='3' useRoundEdges='1'>
+	<categories font='Arial' fontSize='12' fontColor='000000'>
+		<category label='rongjieyang' />
+	</categories>
+	
+	<dataset seriesName="rongjieyang">
+		<set value="7.5" /> 
+	</dataset>
+	<dataset seriesName="jianchazhi" renderAs="Line" color="0372AB" lineThickness="4">
+		<set value="5" /> 
+	</dataset>
+	
+	<trendLines>
+		<line startValue="2" color="F984A1" displayvalue="V" valueOnRight="1" /> 
+	</trendLines>
+	<trendLines>
+		<line startValue="3" color="A66EDD" displayvalue="IV" valueOnRight="1" /> 
+	</trendLines>
+	<trendLines>
+		<line startValue="5" color="8BBA00" displayvalue="III" valueOnRight="1" /> 
+	</trendLines>
+	<trendLines>
+		<line startValue="6" color="F6BD0F" displayvalue="II" valueOnRight="1" /> 
+	</trendLines>
+	<trendLines>
+		<line startValue="7.5" color="AFD8F8" displayvalue="I" valueOnRight="1" /> 
+	</trendLines>
+</chart>

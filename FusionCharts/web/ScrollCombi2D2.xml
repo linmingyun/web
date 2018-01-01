@@ -1,0 +1,50 @@
+<chart caption='Hits per hour' lineThickness='2' showValues='0'
+	areaOverColumns='0' formatNumberScale='0' useRoundEdges='1' palette='2'
+	legendBorderAlpha='0'>
+	<categories>
+		<category label='asdf' />
+		<category label='adsf' />
+		<category label='adsf' />
+		<category label='adsf' />
+		<category label='adsf' />
+		<category label='adfd' />
+		<category label='adff' />
+		<category label='adsf' />
+		<category label='asdf' />
+		<category label='adsf' />
+		<category label='adsf' />
+		<category label='asdf' />
+		<category label='adsf' />
+	</categories>
+	<dataset seriesName='adsf'>
+		<set value='14186.84765625' />
+		<set value='9787.5107421875' />
+		<set value='2597.968994140625' />
+		<set value='0.0' />
+		<set value='1992.3756103515625' />
+		<set value='0.0' />
+		<set value='28.062999725341797' />
+		<set value='0.0' />
+		<set value='0.0' />
+		<set value='179.5260009765625' />
+		<set value='36.51219940185547' />
+		<set value='166.25669860839844' />
+		<set value='6786.48486328125' />
+	</dataset>
+	<dataset lineThickness='3' seriesName='asdf' parentYAxis='S'
+		color='FF0000'>
+		<set value='14000' />
+		<set value='13000' />
+		<set value='12000' />
+		<set value='11000' />
+		<set value='10000' />
+		<set value='14000' />
+		<set value='13000' />
+		<set value='12000' />
+		<set value='11000' />
+		<set value='10000' />
+		<set value='11000' />
+		<set value='12000' />
+		<set value='13000' />
+	</dataset>
+</chart>

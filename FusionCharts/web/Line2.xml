@@ -1,0 +1,35 @@
+<chart caption='biaoti' subcaption='zhibiaoti' animation='1' palette='1' showLabels='1'
+		labelDisplay='STAGGER' rotateLabels='0' slantLabels='0' labelStep='1' staggerLines='3'
+		showValues='1' rotateValues='0' showYAxisValues='1' showLimits='1' showDivLineValues='1'
+		yAxisValuesStep='1' showShadow='1' rotateYAxisName='1' defaultAnimation='1' setAdaptiveYMin='0'
+		bgColor='FFFFFF,3399CC' bgAlpha='10,10' bgAngle='270' canvasBgColor='ffffff,ff0000' 
+		canvasBgAlpha='50,50' canvasBorderColor='00ff00' canvasBorderThickness='1' borderAlpha='100'
+		canvasBgAngle='270' canvasBorderAlpha='50' showBorder='1' borderColor='ff0000' borderThickness='1'
+		numDivLines='5' divLineIsDashed='1' divLineDashLen='8' divLineDashGap='8' zeroPlaneColor='000000'
+		showAlternateHGridColor='1' alternateHGridColor='0000ff' alternateHGridAlpha='10'
+		formatNumberScale='0' numvdivlines='10' lineColor='1D8BD1'>
+	<set label='Jan' value='17400' />
+	<set label='Feb' value='19800' />
+	<set label='Mar' value='21800' />
+	<set label='Apr' value='23800' />
+	<set label='May' value='29600' />
+	<set label='Jun' value='27600' />
+	<set label='Jul' value='31800' />
+	<set label='Aug' value='39700' />
+	<set label='Sep' value='37800' />
+	<set label='Oct' value='21900' />
+	<set label='Nov' value='32900' />
+	<set label='Dec' value='39800' />
+	<styles>
+		<definition>
+			<style name='Anim1' type='animation' param='_xscale' start='0' duration='1' />
+			<style name='Anim2' type='animation' param='_alpha' start='0' duration='0.6' />
+			<style name='DataShadow' type='Shadow' alpha='40' />
+		</definition>
+		<application>
+			<apply toObject='DIVLINES' styles='Anim1' />
+			<apply toObject='HGRID' styles='Anim2' />
+			<apply toObject='DATALABELS' styles='DataShadow,Anim2' />
+		</application>
+	</styles>
+</chart>

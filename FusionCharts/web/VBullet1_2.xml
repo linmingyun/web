@@ -1,0 +1,11 @@
+<chart caption='wuxi' palette='1' lowerLimit='0' chartBottomMargin='4'
+	chartLeftMargin='5' showBorder='0'
+	upperLimit='44'>
+	<colorRange>
+		<color code='00CC00' minValue='0' maxValue='25.10' />
+		<color code='FF8000' minValue='25.10' maxValue='33.47' />
+		<color code='FF0000' minValue='33.47' maxValue='41.85' />
+	</colorRange>
+	<value>41.83</value>
+	<target>40.59</target>
+</chart>

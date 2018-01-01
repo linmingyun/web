@@ -1,0 +1,25 @@
+<chart caption='shuizhipingjia' xAxisName='jiancexiang' setAdaptiveSYMin='0' SYAxisMaxValue='10' decimals='1' showPlotBorder='1' palette='3' useRoundEdges='1'>
+	<categories font='Arial' fontSize='12' fontColor='000000'>
+		<category label='rongjieyang' /> 
+	</categories>
+	<dataset>
+		<dataSet seriesName='V' color='F984A1' showValues='0'>
+			<set value='2' /> 
+		</dataSet>	
+		<dataSet seriesName='IV' color='A66EDD' showValues='0'>
+			<set value='1' /> 
+		</dataSet>		
+		<dataSet seriesName='III' color='8BBA00' showValues='0'>
+			<set value='2' /> 
+		</dataSet>	
+		<dataSet seriesName='II' color='F6BD0F' showValues='0'>
+			<set value='1' /> 
+		</dataSet>	
+		<dataSet seriesName='I' color='AFD8F8' showValues='0'>
+			<set value='1.5' /> 
+		</dataSet>	
+	</dataset>
+	<lineSet seriesname='jianchazhi' showValues='0' lineThickness='4'>
+		<set value='3' /> 
+	</lineSet>
+</chart>
