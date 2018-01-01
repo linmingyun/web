@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AJAX/AJAX.iml" filepath="$PROJECT_DIR$/AJAX/AJAX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FusionCharts/FusionCharts.iml" filepath="$PROJECT_DIR$/FusionCharts/FusionCharts.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaScript/JavaScript.iml" filepath="$PROJECT_DIR$/JavaScript/JavaScript.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebApplication.iml" filepath="$PROJECT_DIR$/WebApplication.iml" />
     </modules>
